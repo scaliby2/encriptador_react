@@ -1,0 +1,135 @@
+html, body, .container-fluid {
+  background-color: #ecc5ba; /* Cambia esto al color del panel lateral */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Elimina el scroll en pantalla completa */
+  
+}
+/* Asegúrate de que este CSS es más específico */
+.text-container .text-input {
+  font-size: 50px; /* Cambia el tamaño de la letra del textarea de entrada */
+}
+h3 {
+  margin: 0; /* Elimina márgenes por defecto */
+  font-size: 24px; /* Ajusta el tamaño de la fuente según tus necesidades */
+}
+/* Header */
+.header {
+  background-color: #dfd4d0;
+  height: 80px; /* Ajusta la altura según tus necesidades */
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  z-index: 10;
+  position: relative;
+  justify-content: center;
+
+  
+}
+.copy-btn{
+margin-top: 10px;
+}
+.logo {
+  margin-right: 10px; /* Espacio entre la imagen y el texto */
+  height: 50px; /* Ajusta el tamaño de la imagen según tus necesidades */
+}
+
+/* Contenedor principal */
+.encriptador-container {
+  height: 100vh; 
+  display: flex;
+  overflow: auto; /* Permite el scroll en pantallas pequeñas */
+  padding-bottom: 5%;
+  
+  
+}
+
+/* Textarea de entrada */
+.text-input {
+  width: 100%;
+  height: 70vh;
+  padding: 10px;
+  border: 2px solid #cce4f6;
+  border-radius: 8px;
+  resize: none;
+    background-color: transparent;
+
+}
+
+/* Botones */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px
+ 
+}
+
+.encriptar-btn {
+  background-color: #0a3871;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.desencriptar-btn {
+  background-color: white;
+  border: 2px solid #0a3871;
+  color: #0a3871;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+/* Panel lateral */
+.resultado-box {
+  display: flex;
+  font-size: medium;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 82%; 
+  background: white; /* Fondo claro */  
+  border-radius: 20px;
+  background-color: transparent;
+
+}
+
+.mensaje {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.resultado-text {
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  resize: none;
+  border-radius: 8px;
+  font-size: 30px !important  
+}
+
+.row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+  background-color: transparent;
+
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  html, body, .container-fluid {
+    overflow: auto; /* Permite el scroll en pantallas pequeñas */
+  }
+}
