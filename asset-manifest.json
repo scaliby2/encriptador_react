@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/encriptador_react/static/css/main.cba014a6.css",
-    "main.js": "/encriptador_react/static/js/main.366b577b.js",
+    "main.js": "/encriptador_react/static/js/main.e34378a3.js",
     "static/js/488.31b0f110.chunk.js": "/encriptador_react/static/js/488.31b0f110.chunk.js",
     "index.html": "/encriptador_react/index.html",
     "main.cba014a6.css.map": "/encriptador_react/static/css/main.cba014a6.css.map",
-    "main.366b577b.js.map": "/encriptador_react/static/js/main.366b577b.js.map",
+    "main.e34378a3.js.map": "/encriptador_react/static/js/main.e34378a3.js.map",
     "488.31b0f110.chunk.js.map": "/encriptador_react/static/js/488.31b0f110.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cba014a6.css",
-    "static/js/main.366b577b.js"
+    "static/js/main.e34378a3.js"
   ]
 }
