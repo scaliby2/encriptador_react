@@ -57,7 +57,7 @@ const Encriptador = () => {
               onChange={(e) => setTexto(e.target.value)}
               style={{background:'transparent', border:'none'}}
             ></textarea>
-            <p className="text-muted small mt-2">🔹 Solo letras minúsculas y sin acentos</p>
+            <p className="text-muted small mt-2">🔹 Solo letras minusculas y sin acentos</p>
 
             {/* Botones */}
             <div className="button-group">
@@ -73,7 +73,7 @@ const Encriptador = () => {
           {/* Panel Lateral */}
           <div className="col-md-4 col-12 resultado-box ">
             <div className="resultado-box">
-              <img src={`${process.env.PUBLIC_URL}/muñeco.png`} alt="Ilustración" className="img-fluid" />
+              <img src={`${process.env.PUBLIC_URL}/Muñeco.png`} alt="Ilustración" className="img-fluid" />
               {/* Condición para el mensaje dinámico */}
               <p className="mensaje">
                 {texto ? "Texto encontrado" : "🔍 Ningún mensaje fue encontrado"}
