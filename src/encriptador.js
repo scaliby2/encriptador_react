@@ -26,6 +26,7 @@ const Encriptador = () => {
       .replace(/ufat/g, "u");
     setResultado(textoDesencriptado);
   };
+
   const copiar = () => {
     navigator.clipboard.writeText(resultado)
       .then(() => {
@@ -40,8 +41,8 @@ const Encriptador = () => {
     <div className="container-fluid ">
       {/* Header */}
       <header className="header">
-        <img src="/descarga.png" alt="Logo" className="logo" />
-            <h3>Alura latam</h3>
+      <img src={`${process.env.PUBLIC_URL}/descarga.png`} alt="Imagen" className="logo" />
+      <h3>Alura latam</h3>
       </header>
 
       {/* Contenedor Principal */}
@@ -72,13 +73,21 @@ const Encriptador = () => {
           {/* Panel Lateral */}
           <div className="col-md-4 col-12 resultado-box ">
             <div className="resultado-box">
-              <img src="/Muñeco.png" alt="Ilustración" className="img-fluid" />
-              <p className="mensaje"> 🔍 Ningún mensaje fue encontrado</p>
+              <img src={`${process.env.PUBLIC_URL}/muñeco.png`} alt="Ilustración" className="img-fluid" />
+              {/* Condición para el mensaje dinámico */}
+              <p className="mensaje">
+                {texto ? "Texto encontrado" : "🔍 Ningún mensaje fue encontrado"}
+              </p>
               <span className="text-muted">Ingresa el texto que desees encriptar o desencriptar.</span>
-              <textarea className="form-control resultado-text"style={{background:'transparent',border:'none'}} readOnly value={resultado}></textarea>
-               <div className="d-flex justify-content-center">
-                <a className="btn btn-primary mt-10 copy-btn" onClick={onclick}>Copiar</a>
-               </div>
+              <textarea 
+                className="form-control resultado-text" 
+                style={{background:'transparent',border:'none'}} 
+                readOnly 
+                value={resultado}>
+              </textarea>
+              <div className="d-flex justify-content-center">
+                <a className="btn btn-primary mt-10 copy-btn" onClick={copiar}>Copiar</a>
+              </div>
             </div>
           </div>
         </div>
